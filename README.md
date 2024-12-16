@@ -35,7 +35,7 @@ Once that's done, we'll log into DC-1.
 <img src="https://github.com/user-attachments/assets/c769dda7-160a-463f-a999-10ec6e3a52e3" height="80%" width="80%" alt="server manager in DC-1"/>
 </p>
 <p>
-The Server manager should automatically load up if not click on Start and you should see the Server Manager icon. Click on Add roles and features and accept the defaults until Select Server Roles. We'll select Active Directory Domain Services.
+The Server manager should automatically load up if not click on Start and you should see the Server Manager icon. Click on Add roles and features, and accept the defaults until Select Server Roles. We'll select Active Directory Domain Services.
 </p>
 <br />
 <p>
@@ -49,7 +49,7 @@ Continue with this and check Restart the destination server automatically if req
 <img src="https://github.com/user-attachments/assets/1ee98876-3593-4ec9-b4bf-1e20b455b15c" height="80%" width="80%" alt="promote to domain controller"/>
 </p>
 <p>
-In the deployment configuration, click on Add a new forest and input mydomain.com. In reality, you can name this domain anything you like.
+In the deployment configuration, click on Add a new forest and input mydomain.com. You can name this domain anything you like.
 </p>
 <br />
 <p>
@@ -58,7 +58,7 @@ In the deployment configuration, click on Add a new forest and input mydomain.co
 <p>
 Click next and where it says to put in Directory services restore mode password, you can put in anything you like as it is unlikely we will use it. Continue with the configuration and you will be automatically signed out of the machine as Active Directory completes installation.
 
-Now, we'll try to log into our Client-1 machine. If you try to login with your usual credentials, it will fail since no domain is specified as we just set up DC-1 as the domain controller. So to log into the machine, we need specify the domain like so: mydomain.com\\(your username), and then enter the password. 
+Now, we'll try to log into our Client-1 machine. If you try to login with your usual credentials, it will fail since no domain is specified as we just set up DC-1 as the domain controller. So to log into the machine, we need specify the domain like so: mydomain.com\(username), and then enter the password. 
 
 Once that's confirmed, we jump back log back into the DC-1 machine. The next step is to create a Domain admin user within the domain. The person will be able to administer the entire domain of users and is quite an important task. So we can click on Start -> Windows Administrative Tools -> Active Directory Users and Computers. Now right click on mydomain.com -> New -> Organizational Unit (OU).
 </p>
@@ -67,7 +67,7 @@ Once that's confirmed, we jump back log back into the DC-1 machine. The next ste
 <img src="https://github.com/user-attachments/assets/27d9f0b0-265c-4a1d-aff2-1fc6183e1664" height="80%" width="80%" alt="create OU for domain"/>
 </p>
 <p>
-We can name the new OU _EMPLOYEES and we can create another one called _ADMINS. Then we'll create an admin user. Right click on _ADMINS -> New -> User. We'll name this admin user Jane Doe, with as username of jane_admin. Set whatever password that you wish. 
+We can name the new OU _EMPLOYEES and we will create another one called _ADMINS. Next, we'll create an admin user. Right click on _ADMINS -> New -> User. We'll name this admin user Jane Doe, with as username of jane_admin. Set whatever password that you wish. 
 
 Although Jane Doe is in a OU called _ADMINS, she technically is not yet a Domain admin since we have not given those privileges to her. So to do this, we click on _ADMINS and see that Jane Doe is there. Right click on Jane Doe -> Properties -> Member Of then type in Domain Admins in the box. Click on Check names, then OK and apply these settings.
 </p>
