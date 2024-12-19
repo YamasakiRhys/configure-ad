@@ -39,14 +39,14 @@ The Server manager should automatically load up if not click on Start and you sh
 </p>
 <br />
 <p>
-<img src="https://github.com/user-attachments/assets/850f1f4f-e318-464c-9950-f0f40d7aaa9c" height="80%" width="80%" alt="installing AD"/>
+<img src="https://github.com/user-attachments/assets/d30d0868-71e3-47d4-9067-524d0248cd9f" height="80%" width="80%" alt="installing AD"/>
 </p>
 <p>
 Continue with this and check Restart the destination server automatically if required before clicking Install. After installation is complete, go back to the Server manager and click on the flagged icon in the top right. Then, click on the link that says to Promote this server to a domain controller. 
 </p>
 <br />
 <p>
-<img src="https://github.com/user-attachments/assets/1ee98876-3593-4ec9-b4bf-1e20b455b15c" height="80%" width="80%" alt="promote to domain controller"/>
+<img src="https://github.com/user-attachments/assets/8cd27bff-a002-4d4d-a2cb-aa46d2034698" height="80%" width="80%" alt="promote to domain controller"/>
 </p>
 <p>
 In the deployment configuration, click on Add a new forest and input mydomain.com. You can name this domain anything you like.
