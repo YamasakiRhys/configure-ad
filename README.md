@@ -77,9 +77,8 @@ Although Jane Doe is in a OU called _ADMINS, she technically is not yet a Domain
 </p>
 <br />
 Now we'll need to change Client-1's DNS servers such that they point to the private IP address of DC-1
-
 <p>
-<img src="https://github.com/user-attachments/assets/5bc33311-7037-4a64-ac19-6d11909e6ce2" height="80%" width="80%" alt="preconfigure vms before deploy AD"/>
+<img src="https://github.com/user-attachments/assets/46384fb0-a648-4890-b84a-d7acd0833d57" height="80%" width="80%" alt="preconfigure vms before deploy AD"/>
 </p>
 <br />
 <p>
