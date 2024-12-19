@@ -64,7 +64,7 @@ Once that's confirmed, we jump back log back into the DC-1 machine. The next ste
 </p>
 <br />
 <p>
-<img src="https://github.com/user-attachments/assets/27d9f0b0-265c-4a1d-aff2-1fc6183e1664" height="80%" width="80%" alt="create OU for domain"/>
+<img src="https://github.com/user-attachments/assets/78c92903-f9d0-4aa0-a808-0fb9355eac0e" height="80%" width="80%" alt="create OU for domain"/>
 </p>
 <p>
 We can name the new OU _EMPLOYEES and we will create another one called _ADMINS. Next, we'll create an admin user. Right click on _ADMINS -> New -> User. We'll name this admin user Jane Doe, with as username of jane_admin. Set whatever password that you wish. 
